@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { useRef, useState } from "react";
 import SliderCard from "./SliderCard";
 import PopupFeedback from "../../popup/PopupFeedback";
-import { IHomePageData } from "../../../pages";
+import { IHomePageData } from "../../../pages_OLD";
 
 interface IProps {
     content: IHomePageData['how_to_use']

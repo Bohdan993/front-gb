@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CustomButtonYellow from "../../UI/CustomButtonYellow";
-import { IHomePageData } from "../../../pages";
+import { IHomePageData } from "../../../pages_OLD";
 import { IPopupProps } from "../../../store/popup/popup.props";
 import { connect, ConnectedProps } from "react-redux";
 interface IProps extends PropsFromRedux {

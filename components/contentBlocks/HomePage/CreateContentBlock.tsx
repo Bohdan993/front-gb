@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IHomePageData } from "../../../pages";
+import { IHomePageData } from "../../../pages_OLD";
 import Translate from "../../../inc/locale/Translate";
 interface IProps {
     content: IHomePageData['create_content']
