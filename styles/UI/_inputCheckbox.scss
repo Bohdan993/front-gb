@@ -1,0 +1,43 @@
+.inputCheckbox {
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &__title {
+      font-weight: 400;
+      font-size: 18px;
+      color: #494949;
+    }
+    a {
+      text-decoration: underline;
+      color: #494949;
+      &:hover {
+        color: #494949;
+      }
+    }
+    input[type="checkbox"] {
+      margin: 0 22px 0 0;
+      /* Add if not using autoprefixer */
+      -webkit-appearance: none;
+      /* Remove most all native input styles */
+      appearance: none;
+      width: 36px;
+      height: 36px;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+      transform: translateY(-0.075em);
+      display: grid;
+      place-content: center;
+    }
+    input[type="checkbox"]::before {
+      content: url(/images/icons/check-vector.svg);
+      transform: scale(0);
+    }
+    input[type="checkbox"]:checked::before {
+      transform: scale(1);
+    }
+    input[type="checkbox"]:disabled {
+      cursor: not-allowed;
+    }
+  }
+}

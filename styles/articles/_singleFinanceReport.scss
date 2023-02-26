@@ -1,0 +1,29 @@
+.singleFinanceReport {
+  height: 115px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 20px 12px;
+  background: #f7f8f9;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  @include media-breakpoint-down(md) {
+    height: 93px;
+    padding: 15px 12px 12px;
+  }
+  .titleCurrentReport {
+    &_title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      margin: 0;
+      @include media-breakpoint-down(md) {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        text-align: center;
+        color: #6e6e6e;
+      }
+    }
+  }
+}

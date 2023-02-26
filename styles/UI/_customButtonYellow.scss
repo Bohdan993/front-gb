@@ -1,0 +1,59 @@
+.customButtonYellow {
+  padding: 14px 34px;
+  background: #fff500;
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  //max-width: 215px;
+  min-width: 120px;
+  text-align: center;
+  span {
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 20px;
+    color: #282828;
+  }
+  &:hover{
+    background:#FFD600;
+  }
+}
+
+
+.customButtonYellowRound {
+  width: 100%;
+  max-width: 266px;
+  // height: 20px;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 34px;
+  background: #FFE74D;
+  border-radius: 30px;
+  transition: background 0.25s linear;
+  cursor: pointer;
+
+  span {
+    display: block;
+    padding-right: 17px;
+    white-space: nowrap;
+  }
+
+  img {
+    min-width: 10px!important;
+    min-height: 10px!important;
+  }
+  
+  &:hover{
+    background:#FFD600;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}

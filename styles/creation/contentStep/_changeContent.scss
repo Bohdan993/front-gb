@@ -1,0 +1,31 @@
+.changeContent {
+  &__card {
+    padding: 24px 20px;
+    box-shadow: 4px 10px 80px #e1e1e1;
+    background: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    height: 100%;
+    &:hover {
+      box-shadow: 4px 10px 8px #bdbdbd;
+    }
+
+    &_title {
+      margin: -5px 0 3px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 23px;
+      color: #282828;
+    }
+    &_description {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+      color: #494949;
+    }
+    &_active {
+      box-shadow: 1px 5px 20px 13px #bdbdbd;
+    }
+  }
+}

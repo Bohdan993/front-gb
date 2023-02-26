@@ -1,0 +1,43 @@
+.step3 {
+  margin-top: 36px;
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    color: #000000;
+  }
+  &__name {
+    .inputCustom {
+      margin: 35px 0;
+      &__title {
+        margin-left: 0;
+        span {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 20px;
+          color: #35373c;
+        }
+      }
+      input {
+        padding-left: 32px;
+      }
+    }
+  }
+  &__description {
+    .textArea {
+      margin: 35px 0;
+    }
+  }
+  &__list {
+    margin: 35px 0;
+    width: 75%;
+    .inputCustom {
+      input {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: #494949;
+      }
+    }
+  }
+}

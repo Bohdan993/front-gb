@@ -1,0 +1,37 @@
+.listContentNoPay,
+.fileContentNoPay {
+  margin: 55px 0;
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-template-rows: 100%;
+  gap: 2%;
+  &__leftBlock {
+    background: #c4c4c4;
+    border-radius: 14px;
+    //width: 120px;
+  }
+  &__rightBlock {
+    margin-left: 3%;
+    @media (min-width: 1270px) {
+      margin-left: 4%;
+    }
+    &_list {
+      margin-bottom: 40px;
+    }
+    &_list:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__textBlock {
+    height: 26px;
+    background: #c4c4c4;
+    border-radius: 4px;
+    margin-left: 3%;
+    @include media-breakpoint-down(md) {
+      height: 16px;
+    }
+    @media (min-width: 1270px) {
+      margin-left: 4%;
+    }
+  }
+}

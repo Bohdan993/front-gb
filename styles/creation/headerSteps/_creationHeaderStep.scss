@@ -1,0 +1,49 @@
+.creationHeaderStep {
+  display: flex;
+  flex-direction: column;
+
+  &__steps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &_description {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #282828;
+        margin-bottom: 10px;
+        @include media-breakpoint-down(md) {
+          font-size: 14px;
+          line-height: 20px;
+          color: #202122;
+        }
+      }
+      &_currentStep {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #494949;
+        @include media-breakpoint-down(md) {
+          color: #797a8a;
+        }
+      }
+    }
+    &__step:nth-child(2) {
+      padding-right: 34px;
+      @include media-breakpoint-down(md) {
+        padding-right: 18px;
+      }
+    }
+    &__step:nth-child(3) {
+      padding-right: 6px;
+    }
+  }
+}

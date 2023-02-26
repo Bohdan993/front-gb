@@ -1,0 +1,157 @@
+.lessons_block {
+  background: #e7eaff;
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  &__first {
+    background: #fcfcff;
+    box-shadow: 4px 10px 80px #e1e1e1;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    max-width: 1312px;
+    @include media-breakpoint-down(sm) {
+      padding-top: 30px;
+      padding-bottom: 36px;
+      margin-top: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    h1 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      margin: 91px 0 91px 86px;
+      @include media-breakpoint-down(sm) {
+        font-size: 26px;
+        margin: 0;
+        text-align: center;
+      }
+    }
+    &__left {
+      margin: 0 auto;
+      margin: 68px 33px 0 50px;
+      @include media-breakpoint-down(sm) {
+        margin: 9px 44px 0 0;
+      }
+      h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        margin-bottom: 40px;
+        @include media-breakpoint-down(sm) {
+          font-size: 18px;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &__second {
+    padding-left: 70px;
+    padding-right: 70px;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      padding-left: 15px;
+      padding-right: 24px;
+    }
+    .separator_first {
+      height: 1px;
+      background-image: linear-gradient(to right, #c4c4c4 50%, transparent 50%);
+      background-position: top;
+      background-size: 10px 1px;
+      background-repeat: repeat-x;
+      position: absolute;
+      top: 25%;
+      left: 24%;
+      width: 20vw;
+      @include media-breakpoint-down(sm) {
+        transform: rotate(90deg);
+        top: 40%;
+        left: 7%;
+      }
+    }
+    .separator_second {
+      height: 1px;
+      background-image: linear-gradient(to right, #c4c4c4 50%, transparent 50%);
+      background-position: top;
+      background-size: 10px 1px;
+      background-repeat: repeat-x;
+      position: absolute;
+      top: 25%;
+      right: 24%;
+      z-index: 2;
+      width: 20vw;
+      @include media-breakpoint-down(sm) {
+        transform: rotate(90deg);
+        top: 70%;
+        left: 7%;
+      }
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      z-index: 3;
+      padding-top: 20px;
+      &:hover {
+        .icon{
+         
+          transform: translateY(-10px);
+          transition: all 0.5s ease;
+          z-index: 3;
+        }
+     
+      }
+      @include media-breakpoint-down(sm) {
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        text-align: left;
+        margin-top: 33px;
+      }
+      &__text {
+        @include media-breakpoint-down(sm) {
+          margin-left: 20px;
+        }
+        div {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 30px;
+          @include media-breakpoint-down(sm) {
+            font-size: 24px;
+          }
+        }
+        span {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          color: #494949;
+          @include media-breakpoint-down(sm) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .customButtonYellow {
+    width: 215px;
+    @include media-breakpoint-down(lg) {
+      margin: 0 auto;
+    }
+    @include media-breakpoint-down(sm) {
+      margin: 0 auto;
+    }
+  }
+}

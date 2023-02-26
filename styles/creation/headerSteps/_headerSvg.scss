@@ -1,0 +1,44 @@
+.headerSvg {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 11px;
+  height: 50px;
+  @include media-breakpoint-down(md) {
+    height: 39px;
+  }
+  svg {
+    min-height: 29px;
+    min-width: 29px;
+  }
+  &__line {
+    width: 44%;
+    border-bottom: 1px solid #c4c4c4;
+  }
+  &_step1_1,
+  &_step2_2,
+  &_step3_3 {
+    background: url("/images/icons/done_pre.svg") 0 0 / contain no-repeat;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+  }
+  &_step1_2,
+  &_step1_3,
+  &_step2_3 {
+    background: url("/images/icons/done_active.svg") 0 0 / contain no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+  &_step2_1,
+  &_step3_1,
+  &_step3_2 {
+    background: url("/images/icons/done_header.svg") 0 0 / contain no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+}

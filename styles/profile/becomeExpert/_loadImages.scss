@@ -1,0 +1,44 @@
+.loadImages {
+  max-width: 200px;
+  margin: 0 auto;
+  &__loader {
+    &_img {
+      border-radius: 50%;
+      margin-bottom: 14px;
+      height: 203px;
+      width: 203px;
+      overflow: hidden;
+      @include media-breakpoint-down(md) {
+        height: 120px;
+        width: 120px;
+      }
+    }
+    &_wrapper {
+      max-width: 200px;
+      input.hidden {
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+        line-height: 0;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+      }
+      label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        max-width: 200px;
+        .customButtonBlue {
+          padding: 10px 37px;
+          @include media-breakpoint-down(md) {
+            height: 48px;
+            width: 189px;
+          }
+        }
+      }
+    }
+  }
+}

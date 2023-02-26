@@ -1,0 +1,16 @@
+.ArticleTitle {
+  margin-bottom: 28px;
+
+  span {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    color: #282828;
+    word-wrap: break-word;
+    @include media-breakpoint-down(md) {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 140%;
+    }
+  }
+}

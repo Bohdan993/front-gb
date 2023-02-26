@@ -1,0 +1,106 @@
+.priceStep3 {
+  //span {
+  //  font-weight: 500;
+  //  font-size: 24px;
+  //  line-height: 20px;
+  //  color: #35373c;
+  //}
+  &__price {
+    &_title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 20px;
+      color: #35373c;
+      @include media-breakpoint-down(md) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #35373c;
+      }
+    }
+    &_price {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      //align-items: center;
+      .inputCustom input {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 100%;
+        padding: 14px;
+        /* identical to box height, or 32px */
+
+        color: #000000;
+      }
+    }
+    .select {
+      margin: 0;
+      //width: 94px;
+      max-height: 65px;
+      flex-wrap: nowrap;
+
+      font-size: 100px;
+      &-input {
+        font-size: 8px;
+      }
+      &__title {
+        margin: 0;
+      }
+    }
+    .inputCustom {
+      margin: 0;
+      max-width: 216px;
+      @include media-breakpoint-down(md) {
+        width: 109px;
+      }
+      input {
+        height: 65px;
+        padding-right: 16px;
+      }
+    }
+  }
+  &__commission {
+    &_totalCommission {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 20px;
+      color: #9c9ea4;
+      margin-top: 55px;
+    }
+  }
+  &__commission_sum {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    color: #9c9ea4;
+    margin-top: 78px;
+  }
+  &__finalPrice {
+    &_total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      &_currentPrise {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 20px;
+        color: #282828;
+        background: #f7f8f9;
+        border: 4px solid #fff500;
+        border-radius: 8px;
+        width: 235px;
+        padding: 20px 0;
+        //margin-right: 28px;
+        //margin-top: 16px;
+      }
+      &_currency {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 20px;
+        text-transform: lowercase;
+        color: #9c9ea4;
+      }
+    }
+  }
+}

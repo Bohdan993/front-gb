@@ -1,0 +1,131 @@
+.aside,
+.aside_open {
+  background: #ffffff;
+  //height: calc(100vh - 100px);
+  height: 100vh;
+  max-width: 91px;
+  width: 100%;
+  //position: fixed;
+  //bottom: 0;
+  //left: 0;
+  margin-top: -62px;
+  transition: all 0.3s;
+  z-index: 12;
+  padding-top: 100px;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  @include media-breakpoint-down(md) {
+    margin-top: 0;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    max-width: 100vh;
+    z-index: 101;
+  }
+  .customButtonBlue {
+    display: none;
+  }
+  .aside__nav {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &__avatar {
+      margin-left: 33px;
+      margin-bottom: 26px;
+      justify-content: start;
+      &_wrapper {
+        opacity: 0;
+      }
+    }
+    &__menu {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      &_item,
+      &_item_active {
+        padding: 14px 44px;
+        &_link {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          span {
+            margin-left: 44px;
+            white-space: nowrap;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 29px;
+            color: #808080;
+            opacity: 0;
+            transition: opacity 0.1s ease 0.1s;
+          }
+          svg {
+            width: 30px;
+            height: 30px;
+            transition: all 0.3s ease 0.3s;
+          }
+        }
+      }
+    }
+  }
+}
+.aside_open {
+  max-width: 326px;
+  .customButtonBlue {
+    display: block;
+  }
+  @include media-breakpoint-down(md) {
+    max-width: 100vh;
+    overflow: scroll;
+    height: 100vh;
+    padding-top: 0;
+  }
+  .aside__nav {
+    &__avatar {
+      &_wrapper {
+        opacity: 1;
+      }
+    }
+
+    &__menu {
+      &_item_link {
+        span {
+          opacity: 1;
+        }
+      }
+
+      &_item:hover {
+        width: 100%;
+        background: #fcfcff;
+        span {
+          color: #000000;
+        }
+        svg path {
+          stroke: black;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.aside__nav__menu_item_active {
+  background: #fcfcff;
+  width: 100%;
+  .aside__nav__menu_item_link {
+    .nav__title {
+      color: #000000;
+    }
+
+    svg {
+      min-width: 30px;
+      path {
+        stroke: black;
+        opacity: 1;
+      }
+    }
+  }
+}

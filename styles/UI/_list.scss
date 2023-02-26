@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  //align-items: center;
+  margin-bottom: 24px;
+  height: 50px;
+
+  .inputCustom {
+    margin: 0 22px 0 22px;
+    input {
+      height: 50px;
+    }
+  }
+  &_btnDelete {
+    cursor: pointer;
+  }
+}

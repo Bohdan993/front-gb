@@ -1,0 +1,13 @@
+.editButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s;
+  &__delete,
+  &__edit {
+    @include media-breakpoint-down(md) {
+      height: 22px;
+      width: 18px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.fileContent {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__file {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include media-breakpoint-down(md) {
+      justify-content: space-between;
+    }
+    margin-bottom: 61px;
+    width: 100%;
+    &_img {
+      height: 42px;
+      width: 22px;
+      @include media-breakpoint-down(md) {
+        height: 21px;
+        width: 11px;
+      }
+    }
+    span {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 140%;
+      color: #494949;
+      margin: 0 39px;
+      @include media-breakpoint-down(md) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #808080;
+        margin: 0 16px;
+      }
+    }
+    .customButtonBlue {
+      padding: 10px 37px;
+      @include media-breakpoint-down(md) {
+        padding: 8px 19px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.addContent {
+  &__divActive {
+    scroll-behavior: smooth;
+  }
+  &__content {
+    position: relative;
+    &_navBar {
+      position: absolute;
+      right: -60px;
+      @include media-breakpoint-down(md) {
+        right: 0;
+        bottom: 0;
+        top: revert!important;
+        position: fixed;
+        background: #ffffff;
+        width: 100%;
+        z-index: 10;
+      }
+    }
+  }
+}

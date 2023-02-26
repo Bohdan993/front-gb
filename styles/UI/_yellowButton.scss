@@ -1,0 +1,39 @@
+.greyButton,
+.yellowButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 34px;
+  gap: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 12px;
+  transition: all 0.2s;
+  cursor: pointer;
+  max-width: 265px;
+  max-height: 48px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #c4c4c4;
+    white-space: nowrap;
+  }
+}
+
+.yellowButton {
+  background: #fff500;
+  border: none;
+  &:hover {
+    background: #ffd600;
+  }
+  &__title {
+    color: #282828;
+  }
+}
+.yellowButton:hover,
+.greyButton:hover {
+  box-shadow: 0 0 4px 0 #e1e1e1;
+}

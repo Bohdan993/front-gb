@@ -1,0 +1,19 @@
+.buttonPlus {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 24px;
+  span {
+    color: #1229c6;
+  }
+  &_plus {
+    font-size: 32px;
+    line-height: 30%;
+  }
+  &_title {
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+  }
+}

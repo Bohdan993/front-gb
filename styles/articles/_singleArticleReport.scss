@@ -1,0 +1,17 @@
+.singleArticleReport {
+  padding: 47px 53px;
+  @include media-breakpoint-down(md) {
+    padding: 27px 24px 33px;
+  }
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    &_img {
+      @include media-breakpoint-down(md) {
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+}

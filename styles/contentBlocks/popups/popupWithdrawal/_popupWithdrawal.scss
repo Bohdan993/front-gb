@@ -1,0 +1,90 @@
+.popupWithdrawal {
+  padding: 80px 120px 60px;
+  @include media-breakpoint-down(lg) {
+    padding: 80px 100px 50px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 80px 60px 50px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 40px 20px 30px;
+  }
+  &__title {
+    margin: 0;
+  }
+  &__subtitle {
+    margin-top: 27px;
+  }
+  &__balance {
+    margin-top: 32px;
+    text-align: center;
+  }
+  &__balance-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #282828;
+    @include media-breakpoint-down(md) {
+      font-size: 18px;
+    }
+  }
+  &__balance-sum {
+    margin-top: 9px;
+    font-weight: 800;
+    font-size: 48px;
+    color: #282828;
+    @include media-breakpoint-down(md) {
+      font-size: 32px;
+    }
+  }
+  &__price {
+    margin-top: 40px;
+    width: 100%;
+
+    //@include media-breakpoint-down(xl) {
+    //  grid-area: a;
+    //}
+    .priceStep {
+      margin: 0;
+      width: 100%;
+      grid-template-columns: 50% 50%;
+      &__price {
+        .inputCustom {
+          width: 100%;
+          @include media-breakpoint-down(xs) {
+            min-width: 160px;
+          }
+        }
+        @include media-breakpoint-down(xl) {
+          grid-area: a;
+        }
+      }
+      &__finalPrice {
+        text-align: left;
+        @include media-breakpoint-down(xl) {
+          grid-area: d;
+          text-align: start;
+        }
+      }
+      @include media-breakpoint-down(xl) {
+        justify-items: center;
+        grid-template-areas: "a a" "d d";
+        gap: 16px;
+        //grid-template-columns: 90% 10%;
+      }
+    }
+  }
+  &__price-subtitle,
+  &__subtitle {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #808080;
+    text-align: left;
+  }
+  &__selectCard {
+    width: 100%;
+  }
+  &__limit {
+    width: 100%;
+  }
+}

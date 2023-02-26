@@ -1,0 +1,41 @@
+.buttonsInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 27px;
+  &_technique,
+  &_list,
+  &_other {
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 14px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #282828;
+    background: #fde9e6;
+    border-radius: 6px;
+    @include media-breakpoint-down(md) {
+      justify-content: space-between;
+      padding: 4px 8px;
+      font-size: 18px;
+      margin-right: 8px;
+    }
+  }
+  &_technique {
+    margin-right: 24px;
+    @include media-breakpoint-down(md) {
+      margin-right: 8px;
+    }
+  }
+  &_list {
+    background: #ddecfe;
+    margin-right: 18px;
+    @include media-breakpoint-down(md) {
+      margin-right: 8px;
+    }
+  }
+  &_other {
+    background: #ddfede;
+  }
+}

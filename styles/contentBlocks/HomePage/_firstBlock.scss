@@ -1,0 +1,160 @@
+.first_block {
+  padding-left: 5vw;
+  padding-right: 1vw;
+  @include media-breakpoint-down(lg) {
+    padding-left: 2vw;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-left: 4%;
+    padding-right: 5%;
+  }
+  .header_text {
+    margin-top: 141px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 39px;
+    }
+    h1 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 60px;
+      @include media-breakpoint-down(lg) {
+        text-align: center;
+        font-weight: 900;
+        font-size: 40px;
+      }
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+      }
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      @include media-breakpoint-down(lg) {
+        text-align: center;
+      }
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+        font-size: 26px;
+      }
+    }
+  }
+  .carousel {
+    margin-top: 39px;
+    position: relative;
+  }
+  &__expert_card {
+    .expert_photo_first {
+      width: 400px;
+      height: 617px;
+      border-radius: 30px;
+      background-position: center;
+      background-size: cover;
+      @include media-breakpoint-down(lg) {
+        width: 370px;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 330px;
+        height: 350px;
+      }
+    }
+    .expert_photo_second {
+      width: 180px;
+      height: 617px;
+      border-radius: 30px;
+      background-position: center;
+      background-size: cover;
+      @include media-breakpoint-down(sm) {
+        width: 160px;
+        height: 146px;
+        border-radius: 30px;
+        background-size: cover;
+        background-position: center;
+        //background-position-y: 20%;
+        margin-top: 10px;
+      }
+    }
+    .expert_rectangle {
+      width: 400px;
+      height: 191px;
+      background: rgba(18, 41, 198, 0.4);
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      text-align: center;
+      padding-top: 40px;
+      border-radius: 0 0 30px 30px;
+      @include media-breakpoint-down(lg) {
+        width: 370px;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 329px;
+        height: 128px;
+        bottom: 155px;
+      }
+      span {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        color: #ffffff;
+      }
+    }
+    .expert_rectangle_small {
+      width: 180px;
+      height: 191px;
+      background: rgba(18, 41, 198, 0.4);
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      text-align: center;
+      padding-top: 40px;
+      border-radius: 0 0 30px 30px;
+      font-style: normal;
+      font-weight: 700;
+      color: #ffffff;
+      @include media-breakpoint-down(sm) {
+        width: 160px;
+        height: 73px;
+      }
+      .rotate_text {
+        p {
+          transform: rotate(-90deg);
+          @include media-breakpoint-down(sm) {
+            transform: rotate(0);
+          }
+        }
+        &__title_one {
+          font-size: 36px;
+          width: 211px;
+          position: relative;
+          bottom: 35px;
+          right: 10px;
+          @include media-breakpoint-down(sm) {
+            font-size: 18px;
+            width: 128px;
+            left: 18px;
+            bottom: 30px;
+            text-align: left;
+          }
+        }
+        &__title_two {
+          font-size: 48px;
+          @include media-breakpoint-down(sm) {
+            font-size: 24px;
+            position: relative;
+            bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+  .customButtonYellow {
+    width: 215px;
+    @include media-breakpoint-down(lg) {
+      margin: 0 auto;
+    }
+    @include media-breakpoint-down(sm) {
+      margin: 0 auto;
+    }
+  }
+}

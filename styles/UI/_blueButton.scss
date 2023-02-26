@@ -1,0 +1,20 @@
+.blueButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 37px;
+  gap: 10px;
+  max-width: 231px;
+  max-height: 48px;
+  border: 2px solid #1229c6;
+  border-radius: 12px;
+  cursor: pointer;
+  span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #1229c6;
+    white-space: nowrap;
+  }
+}

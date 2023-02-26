@@ -1,0 +1,285 @@
+.starterProfile{
+    &__bottom,
+    &__top {
+        padding: 56px 72px;
+        @include media-breakpoint-down(lg) {
+            padding-top: 24px + 15px;
+            padding-left: 34px + 15px;
+            padding-right: 34px + 15px;
+            padding-bottom: 32px + 15px;
+        }
+        @include media-breakpoint-down(md) {
+            padding-top: 24px;
+            padding-left: 34px;
+            padding-right: 34px;
+            padding-bottom: 32px;
+        }
+    }
+
+    &__top {
+        margin-bottom: 50px;
+
+    }
+
+    &__bottom {
+        .actionCard  {
+            margin-bottom: 56px;
+        }
+    }
+
+    &__steps {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__action-card,
+    &__step-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__action-card {
+        align-items: stretch;
+    }
+
+    &__step-card {
+        margin-bottom: 56px;
+        &:nth-child(odd) {
+            .stepCard__left {
+                flex-basis: (328/888) * 100%;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    padding-top: (236/328) * 100%;
+                }
+            }
+
+            .stepCard__right {
+                flex-basis: ((888 - 328)/888) * 100%;
+                padding-left: (64/888) * 100%;
+            }
+
+            @include media-breakpoint-down(md) {
+               flex-direction: column-reverse;
+               .stepCard__left {
+                    flex-basis: 100%;
+                    width: 100%;
+               }
+               .stepCard__right {
+                    padding-left: 0;
+                    margin-bottom: 32px;
+                    flex-basis: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        &:nth-child(even) {
+            .stepCard__left {
+                flex-basis: ((888 - 328)/888) * 100%;
+                padding-right: (64/888) * 100%;
+            }
+
+            .stepCard__right {
+                flex-basis: (328/888) * 100%;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    padding-top: (236/328) * 100%;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+                .stepCard__right {
+                    flex-basis: 100%;
+                    width: 100%;
+                }
+                .stepCard__left {
+                    padding-right: 0;
+                    margin-bottom: 32px;
+                    flex-basis: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__button-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include media-breakpoint-down(md) {
+            .customButtonYellowRound {
+                max-width: unset;
+            }
+        }
+
+    }
+}
+
+.stepCard {
+    &__title {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        text-align: left;
+        line-height: (36.4/26);
+        margin: 0;
+        @include media-breakpoint-down(lg) {
+            font-size: 23px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 20px;
+          text-align: center;
+        }
+    }
+
+    &__count {
+        font-family: "Jost";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #808080;
+        display: block;
+        position: relative;
+        padding-left: 50px;
+        margin-bottom: 8px;
+
+
+        &:before {
+            content: "";
+            height: 2px;
+            width: 40px;
+            background-color: #808080;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            display: block;
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: 15px;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 14px;
+            padding-left: 0;
+            text-align: center;
+            &::before {
+                content: none;
+            }
+        }
+    }
+}
+
+.actionCard {
+    &__left {
+        flex-basis: ((888-377)/888) * 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right {
+        flex-basis: (377/888) * 100%;
+        position: relative;
+    }
+
+    &__title {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: (50.4/36);
+        margin-bottom: 8px;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 31px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 26px;
+          text-align: center;
+        }
+    }
+
+    &__description {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: (33.6/24);
+        color: #808080;
+        margin-bottom: 0;
+        @include media-breakpoint-down(lg) {
+            font-size: 21px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 18px;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+    }
+
+
+    &:not(.actionCardWithImage) {
+        .actionCard__right {      
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    }
+
+    &.actionCardWithImage  {
+        .actionCard__right {      
+            &:before {
+                content: '';
+                display: block;
+                padding-top: (222/377) * 100%;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 40px;
+            }
+        }
+
+        .actionCard__left {
+            .customButtonYellowRound {
+                margin-top: auto;
+            }
+        }
+
+        .actionCard__description {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .customButtonYellowRound {
+        max-width: 166px;
+        @include media-breakpoint-down(md) {
+            max-width: unset;
+        }
+    }
+
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      &.actionCardWithImage  {
+            .actionCard__right,
+            .actionCard__left {
+                flex-basis: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

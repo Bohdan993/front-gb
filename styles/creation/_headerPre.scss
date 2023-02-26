@@ -1,0 +1,51 @@
+.headerPre {
+  margin: 42px 0 22px;
+
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    color: #282828;
+    @include media-breakpoint-down(md) {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 46px;
+      color: #000000;
+    }
+  }
+  &__addContent {
+    &_wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
+      .buttonPreview {
+        width: 318px;
+      }
+    }
+  }
+  &__saveData {
+    margin-top: 32px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    span {
+      margin-left: 14px;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 20px;
+      color: #c4c4c4;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: 16px;
+      height: 23px;
+      span {
+        margin-left: 4px;
+        font-size: 14px;
+      }
+    }
+  }
+}

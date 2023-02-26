@@ -1,0 +1,41 @@
+.aside__nav__avatar {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: end;
+  border-radius: 50%;
+  img {
+    height: 56px;
+    width: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 33px;
+    //opacity: 0;
+    transition: opacity 0.1s ease 0.1s;
+    max-width: 180px;
+    &_name,
+    &_type {
+      text-align: left;
+      width: 100%;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 35px;
+      color: #000000;
+      //white-space: nowrap;
+      //overflow-wrap: break-word;
+      //word-break: break-all;
+      word-wrap: break-word;
+      overflow: hidden;
+    }
+    &_type {
+      font-weight: 400;
+      font-size: 24px;
+      padding-right: 2px;
+    }
+  }
+}

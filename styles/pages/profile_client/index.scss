@@ -1,0 +1,23 @@
+@import "personalInformation";
+@import "loginData";
+@import "createLessons";
+
+.profileClient {
+  text-align: start;
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    color: #282828;
+    margin-bottom: 52px;
+  }
+  @include media-breakpoint-down(md) {
+    text-align: center;
+    h1 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 40px;
+      color: #000000;
+    }
+  }
+}

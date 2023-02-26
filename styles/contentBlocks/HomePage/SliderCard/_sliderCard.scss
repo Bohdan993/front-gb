@@ -1,0 +1,43 @@
+.slider_card {
+  position: relative;
+  max-width: 256px;
+  height: 296px;
+  background: #fcfcff;
+  box-shadow: 4px 10px 80px #e1e1e1;
+  border-radius: 20px;
+  padding: 24px 22px 34px 22px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+
+  @include media-breakpoint-down(sm) {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+
+  .expert_info {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  .expert_avatar {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #282828;
+    height: 162px;
+  }
+  span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #282828;
+  }
+}

@@ -1,0 +1,30 @@
+.menuInfo {
+  &__list {
+    &_item {
+      font-weight: 400;
+      font-size: 18px;
+      color: #494949;
+      margin-bottom: 20px;
+      &_pay {
+        position: relative;
+        list-style-type: none;
+        font-weight: 400;
+        font-size: 18px;
+        color: #494949;
+        margin-bottom: 20px;
+        &:before {
+          position: absolute;
+          top: 0;
+          left: -23px;
+          content: url(/images/icons/done.svg);
+          color: #1229c6;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

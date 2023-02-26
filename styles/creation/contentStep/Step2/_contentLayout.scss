@@ -1,0 +1,6 @@
+.contentLayout {
+  padding: 40px;
+  @include media-breakpoint-down(md) {
+    padding: 20px;
+  }
+}

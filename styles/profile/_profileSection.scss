@@ -1,0 +1,22 @@
+.profileSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+  transition: all 0.2s;
+
+  &__slogan {
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 140%;
+    color: #494949;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 41px;
+  }
+}

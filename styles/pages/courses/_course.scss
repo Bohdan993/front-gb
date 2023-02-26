@@ -1,0 +1,116 @@
+.course {
+  position: relative;
+  &_price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    color: #282828;
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      top: 200px;
+    }
+  }
+  &__profileBlock {
+    cursor: pointer;
+  }
+  H2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    letter-spacing: 0.01em;
+    color: #282828;
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 26px;
+    color: #282828;
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+    }
+  }
+  transition: all 0.2s;
+  &__details {
+    &_top {
+      h1 {
+        font-weight: 600;
+        font-size: 40px;
+        color: #282828;
+        margin-bottom: 38px;
+        @include media-breakpoint-down(md) {
+          font-size: 28px;
+        }
+      }
+      &_typeData {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .course__details_top_typeData_data {
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 140%;
+          color: #282828;
+          margin-bottom: 17px;
+          @include media-breakpoint-down(md) {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+          }
+        }
+      }
+    }
+    &_bottom {
+      &_textOne {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 140%;
+        color: #282828;
+        margin-bottom: 40px;
+      }
+      &_h2 {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__articles {
+    h2 {
+      margin-bottom: 34px;
+    }
+  }
+  &__btnPay {
+    position: fixed;
+    bottom: 15%;
+    right: 5%;
+    z-index: 100;
+    @include media-breakpoint-down(md) {
+      right: 15%;
+    }
+    .yellowButton {
+      padding: 27px 38px;
+      border: 2px solid #fff500;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      max-width: 208.54px;
+      max-height: 91px;
+      &:hover {
+        box-shadow: 0 4px 20px 2px rgb(0 0 0 / 25%);
+      }
+      @include media-breakpoint-down(md) {
+        height: 60px;
+      }
+      span {
+        font-weight: 700;
+        font-size: 40px;
+        color: #000000;
+        @include media-breakpoint-down(md) {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

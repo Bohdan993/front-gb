@@ -1,0 +1,46 @@
+.createLessons {
+  padding: 68px 80px 48px;
+  transition: all 0.2s;
+  @include media-breakpoint-down(md) {
+    padding: 27px 25px 25px;
+  }
+  &__title h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    color: #282828;
+    @include media-breakpoint-down(md) {
+      font-size: 26px;
+    }
+  }
+  &__create {
+    &_title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 43px;
+      letter-spacing: 0.01em;
+      color: #282828;
+      margin-bottom: 16px;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+    &_text {
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 140%;
+      color: #282828;
+      @include media-breakpoint-down(md) {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    &_btn {
+      margin-top: 35px;
+      max-width: 265px;
+      @include media-breakpoint-down(md) {
+        margin: 20px auto 0;
+      }
+    }
+  }
+}

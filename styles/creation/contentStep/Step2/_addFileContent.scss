@@ -1,0 +1,30 @@
+.addFileContent {
+  padding: 32px;
+  &__file {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    &_name {
+      display: block;
+      margin: 0 39px;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 140%;
+      color: #494949;
+      overflow-wrap: break-word;
+      width: 75%;
+      cursor: pointer;
+      @include media-breakpoint-down(md) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #808080;
+        margin: 0 16px;
+      }
+    }
+    &_btmDelete {
+      cursor: pointer;
+    }
+  }
+}

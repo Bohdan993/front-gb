@@ -1,0 +1,121 @@
+.create_content_block{
+    margin-top: 100px;
+    h1{
+        font-weight: 800;
+        font-size: 48px;
+        margin-bottom: 40px;
+        @include media-breakpoint-down(sm){
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+   
+    &__navigation{
+        max-width: 900px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include media-breakpoint-down(sm){
+            justify-content: space-around;
+            max-width: 300px;
+        }
+        div{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            color: #282828;
+            cursor: pointer;
+            @include media-breakpoint-down(sm){
+                font-size: 16px;
+              
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+      
+
+    }
+    &__format{
+        max-width: 1312px;
+        max-height: 233px;
+        margin: 0 auto;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        background: #FCFCFF;
+        box-shadow: 4px 10px 80px #E1E1E1;
+        border-radius: 20px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+        @include media-breakpoint-down(sm){
+            max-width: 316px;
+            max-height: 154px;
+            padding: 35px  24px 37px 20px;
+          
+        }
+        &_item{
+            width: 360px;
+            border-right: 1px solid #C4C4C4;
+            text-align: center;
+            &:last-child{
+                border-right: 0;
+            }
+            @include media-breakpoint-down(sm){
+                border-right: 0;
+             
+            }
+     
+        }
+       
+        .circle_pink, .circle_green, .circle_purple, .circle_blue {
+            width: 75px;
+            height: 75px;
+            background: #fde9e6;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            @include media-breakpoint-down(sm){
+                width: 47px;
+                height: 47px;
+                padding: 13px;
+            }
+            &:hover{
+                border: 0.1px solid #C4C4C4;
+            }
+        }
+        .circle_purple{
+            background: #FBDDFE;
+            
+        }
+        .circle_green{
+            background: #ddfede;
+          
+          
+        }
+        .circle_blue{
+            background: #DDECFE;
+        
+            
+        }
+        span{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            letter-spacing: 0.01em;
+            @include media-breakpoint-down(sm){
+                font-size: 16px;
+            }
+            
+        }
+
+    }
+  }
+

@@ -1,0 +1,21 @@
+.financeEarn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 38px;
+  padding-bottom: 31px;
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #282828;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: #282828;
+    margin-bottom: 20px;
+  }
+}

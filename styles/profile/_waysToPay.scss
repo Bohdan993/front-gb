@@ -1,0 +1,18 @@
+.waysToPay {
+  padding: 40px 76px;
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #282828;
+    margin-bottom: 42px;
+  }
+  &__item {
+    margin-top: 26px;
+  }
+  &__addCard {
+    margin-top: 16px;
+    .yellowButton {
+      margin: 0 auto;
+    }
+  }
+}

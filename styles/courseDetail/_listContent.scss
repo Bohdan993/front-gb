@@ -1,0 +1,22 @@
+.listContent {
+  margin-top: 52px;
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    &_img {
+      min-width: 20px;
+      min-height: 20px;
+      max-height: 30px;
+      span {
+        display: block;
+      }
+    }
+    p {
+      margin: 0 0 0 30px;
+      @include media-breakpoint-down(md) {
+        margin: 0 0 0 16px;
+      }
+    }
+  }
+}

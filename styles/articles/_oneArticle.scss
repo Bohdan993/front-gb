@@ -1,0 +1,108 @@
+.oneArticle,
+.singleArticleReport,
+.allFinanceReport,
+.stepsBecomeExpert,
+.personalInformation,
+.loginData,
+.createLessons,
+.contentLayout,
+.blockContent {
+  background: #ffffff;
+  box-shadow: 4px 10px 80px #e1e1e1;
+  border-radius: 20px;
+  padding: 30px 30px 10px;
+  margin-bottom: 24px;
+  @include media-breakpoint-down(md) {
+    padding: 24px;
+  }
+
+  &__card_priceDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_price {
+      font-weight: 700;
+      font-size: 36px;
+      color: #282828;
+      margin-bottom: 34px;
+      margin-top: 53px;
+      @include media-breakpoint-down(md) {
+        margin: 0 auto;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .customButtonBlue {
+      padding: 10px 17px;
+      @include media-breakpoint-down(md) {
+        padding: 8px 17px;
+      }
+    }
+  }
+}
+.oneArticle {
+  width: 100%;
+  min-height: 318px;
+  position: relative;
+  padding-bottom: 30px;
+  &_delete {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+  &_edit {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  &_share {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    &_complete,
+    &_done {
+      opacity: 1;
+      position: fixed;
+      display: block;
+      background-color: #009b00;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 8px 14px;
+      border-radius: 12px;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 0.5s all ease-out;
+    }
+    &_done {
+      opacity: 0;
+    }
+  }
+  .customButtonBlue {
+    padding: 9px 13px;
+    width: 144px;
+    @include media-breakpoint-down(md) {
+      width: 118px;
+    }
+  }
+  &__isOpenAdmin {
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    color: red;
+    text-transform: uppercase;
+    @include media-breakpoint-down(xs) {
+      font-size: 14px;
+    }
+  }
+}

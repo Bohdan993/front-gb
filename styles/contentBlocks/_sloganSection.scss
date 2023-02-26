@@ -1,0 +1,32 @@
+.sloganSection {
+  padding: 80px 60px 80px 90px;
+  background: #ddecfe url("/images/Frame.svg") repeat;
+  background-size: cover;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  transition: all 0.2s;
+  @include media-breakpoint-down(md) {
+    padding: 18px 20px;
+  }
+  &__slogan {
+    height: 100%;
+    //width: 60%;
+    &_title,
+    &_text {
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 72px;
+      color: #282828;
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+    &_text {
+      font-weight: 400;
+    }
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+    }
+  }
+}

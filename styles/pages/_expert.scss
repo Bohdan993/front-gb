@@ -1,0 +1,17 @@
+.expert {
+  width: 100%;
+  &__mainContainer {
+    height: 100%;
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+    .profileSection__slogan {
+      color: #676767;
+    }
+  }
+  .avatarProfile_status {
+    font-weight: 400;
+    font-size: 26px;
+    color: #000000;
+  }
+}

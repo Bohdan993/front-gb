@@ -1,0 +1,37 @@
+.customButtonBlue {
+  margin: 0 auto;
+  padding: 10px 27px;
+  border: 2px solid #1229c6;
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  max-width: 220px;
+  //width: 189px;
+  //min-width: 130px;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 20px;
+  color: #1229c6;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 6px 0 rgba(0, 0, 141, 0.48);
+    background-color: rgba(0, 34, 255, 0.04);
+  }
+  @include media-breakpoint-down(md) {
+    padding: 10px 8px;
+    //min-width: 121px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  &.yellow {
+    background: #fff500;
+    border: 2px solid #fff500;
+    color: black;
+    &:hover {
+      background: #ffd600;
+    }
+  }
+}

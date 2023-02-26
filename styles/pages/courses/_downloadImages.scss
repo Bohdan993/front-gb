@@ -1,0 +1,29 @@
+.downLoadImages {
+  margin-bottom: 37px;
+  &__loader {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &_name {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 61px;
+      span {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 140%;
+        color: #494949;
+        margin: 0 39px;
+        @include media-breakpoint-down(lg) {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #808080;
+          margin: 0 16px;
+        }
+      }
+    }
+  }
+}
