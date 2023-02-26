@@ -5,6 +5,7 @@ const nextConfig = {
     defaultLocale: "uk",
     localeDetection: false,
   },
+  experimental: { nftTracing: true },
   reactStrictMode: true,
   swcMinify: true,
   images: {
