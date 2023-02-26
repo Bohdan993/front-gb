@@ -26,9 +26,10 @@ const SideNav: FC<PropsFromRedux> = ({ expertData }) => {
     const token = getCookie("token");
     setIsToken(!!token);
   }, []);
-  if (isToken === false) {
-    return <></>;
-  }
+  
+  // if (!isToken) {
+  //   return <></>;
+  // }
 
   return (
     <nav className="aside__nav">
